@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;HermandadesTW.java&apos; to &apos;difundecev/src/main/java/ajptech.difundecev3&apos;&#x0D;&#x0A;- Original project: &apos;difundecev&apos;&#x0D;&#x0A;- Destination element: &apos;difundecev/src/main/java/ajptech.difundecev3&apos;&#x0D;&#x0A;- Original element: &apos;ajptech.difundecev3.HermandadesTW.java&apos;" description="Copy compilation unit" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajptech.difundecev3" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ajptech.difundecev3{HermandadesTW.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1605826922746" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,53 @@
+----- 2022/07/07: Versión 1.2.0.2.
+- Corrección de errores menores: añadido formateo de caracteres: «.
+- Corrección de errores menores: añadido formateo de caracteres: ».
+
+
+---- 2022/06/24: Versión 1.2.0.1.
+- Corrección de errores menores: añadido formateo de caracteres: ª.
+
+
+---- 2022/05/17: Versión 1.2.0.0.
+- Añadida la mención a la Hdad Sacramental de los Dolores en Instagram, tras solucionarse el 
+  error que no permitía subir publicaciones etiquetándolos.
+- Nueva funcionalidad para copiar el texto a publicar en Telegram. Método de funcionamiento: 
+  copiar URL y pulsar el botón “Texto Telegram”, copiándose al portapapeles el texto completo. 
+  Objetivo de cara a nuevas versiones: automatizar esta función mediante un Bot.
+
+
+---- 2021/09/16: Versión 1.1.2.1.
+- Corrección de errores menores: añadido formateo de caracteres: Á - É - Í - Ó - Ú - Ñ.
+
+
+---- 2021/08/16: Versión 1.1.2.0.
+- Nueva funcionalidad para reconocer si existe un posible fallo de consistencia a la hora de
+  añadir menciones que no estén explícitamente incluídas en el software.
+
+
+---- 2021/03/19: Versión 1.1.0.1. 
+- Actualizada la cuenta de Instagram del Ayuntamiento de El Viso del Alcor.
+
+
+---- 2021/03/08: Versión 1.1.0.0. 
+- Añadida la etiqueta de José Antonio León Redondo para su difusión (no tiene cuenta en Twitter). 
+- Se incluye la opción de añadir etiquetas personalizadas a las publicaciones, para etiquetar a 
+  personas/colectivos distintos, no previstos, dando más libertad y mejorando el funcionamiento
+  del programa. 
+- Limpieza del código.
+
+
+---- 2021/03/06: Versión 1.0.3.5. 
+- Permite publicar en Twitter directamente las nuevas publicaciones.
+- Copia el texto para la publicación de Instagram desde el ordenador.
+- Actualizada la cuenta de Ramón Martín en Instagram.
+- Primera versión lanzada totalmente funcional.
+
+
+---- 2020/10/02: Versión 1.0.3.0.
+- Interfaz gráfica basada en Windows 10.
+- Integración de la API de Twitter.
+- Mensajes de aviso en función de si el tweet se ha publicado o no.
+- Añadidos colectivos como Parroquia, Ayuntamiento, Arzobispado o las bandas del pueblo.
+- Centralizada la información del software para optimizar el código y los accesos a 
+  esta información.
+- Limpieza del código.

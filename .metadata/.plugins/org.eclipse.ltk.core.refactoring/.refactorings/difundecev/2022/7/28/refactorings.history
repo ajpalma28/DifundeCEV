@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;difundecev&apos;&#x0D;&#x0A;- Original project: &apos;difundecev&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     twitter4j-AJPalma28.properties&#x0D;&#x0A;     twitter4j-CofradiasViso.properties" description="Delete elements" element1="lib/twitter4j-AJPalma28.properties" element2="lib/twitter4j-CofradiasViso.properties" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1657791651779" subPackages="false" version="1.0"/>
+</session>

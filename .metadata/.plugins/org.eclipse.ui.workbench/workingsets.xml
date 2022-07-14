@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1601671183273_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1601671183285_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1601671431047_3" label="twitter4j" name="twitter4j">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/twitter4j" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/twitter4j-async" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/twitter4j-core" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/twitter4j-examples" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/twitter4j-appengine" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/twitter4j-http2-support" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/twitter4j-stream" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1601671184622_2" label="Window Working Set" name="Aggregate for window 1601671184622"/>
+</workingSetManager>
