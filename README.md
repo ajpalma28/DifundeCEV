@@ -2,7 +2,7 @@
 
 ### Qué es DifundeCEV
 
-Software para la automatización de la difusión de nuevas publicaciones en [cofradiaselviso.com](www.cofradiaselviso.com), desarrollado por [Antonio Javier Palma](www.github.com/ajpalma28).
+Software para la automatización de la difusión de nuevas publicaciones en [cofradiaselviso.com](https://www.cofradiaselviso.com), desarrollado por [Antonio Javier Palma](https://www.github.com/ajpalma28).
 
 El proyecto surge debido a las necesidades que tienen los colaboradores del portal a la hora de difundir las nuevas publicaciones en la página web, ya que se hace muy tedioso entrar en todos los perfiles de las redes sociales de uno en uno e ir escribiendo las novedades a mano. Con ello, el objetivo es reducir el tiempo que se tarda en realizar esta tarea y automatizarla lo máximo posible.
 
@@ -23,7 +23,7 @@ La versión subida aquí no es totalmente funcional, al no tener las credenciale
 
 ### Ejemplo de publicación en Twitter
 
-DifundeCEV está registrada como una aplicación de terceros autorizada para usar la API de Twitter para publicar tweets.
+DifundeCEV está registrada como una aplicación de terceros autorizada para usar la API de Twitter con permisos para publicar tweets.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ajpalma28/DifundeCEV/main/assets/difundecevTW.png">
