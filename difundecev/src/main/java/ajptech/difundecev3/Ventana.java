@@ -6,9 +6,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
@@ -56,12 +54,8 @@ public class Ventana extends JFrame {
 		add(labelURL);
 		extraeURL = new JTextField();
 		extraeURL.setBounds(10,30+92+10,345+300,30);
+		extraeURL.setText(Funciones.cargaUltimaEntrada().getLink());
 		add(extraeURL);
-		/*
-		hdadPedido = new JComboBox<Hermandades>();
-        extracted1();
-        hdadPedido.setBounds(10,90,350,30);
-        hdadPedido.setBackground(Color.WHITE);*/
 		
 		rocio = new JCheckBox("ROCÍO");
         add(rocio); rocio.setBounds(15, 90+92, 85, 25);
@@ -158,7 +152,6 @@ public class Ventana extends JFrame {
         
         twittear.addActionListener (new ActionListener () {
         	public void actionPerformed (ActionEvent e) {
-        		//Hermandades hdad = (Hermandades) hdadPedido.getSelectedItem();
         		if(extraeURL.getText().equals("")) {
         			JOptionPane.showMessageDialog(null,"Por favor, introduzca el enlace de la entrada",
         					"URL no encontrada",JOptionPane.ERROR_MESSAGE,
@@ -169,38 +162,21 @@ public class Ventana extends JFrame {
     						new ImageIcon(getClass().getResource("MensajeError.png")));
         		} else {
         			
-        			String menciones = generaMencionesTW(); 
-            		String titular = "";
+        			String menciones = generaMencionesTW();
+        			String titular = Funciones.cargaUltimaEntrada().getTitle();
             		String url = extraeURL.getText();
-            		
-            		try {
-            			
-    					titular = Funciones.traduceURL2(url);
-    					
-    				} catch (FileNotFoundException e1) {
-    					
-    					JOptionPane.showMessageDialog(null,"Por favor, revise el enlace de la entrada. Entrada no válida.",
-            					"URL no encontrada",JOptionPane.ERROR_MESSAGE,
-        						new ImageIcon(getClass().getResource("MensajeError.png")));
-    					e1.printStackTrace();
-    					
-    				} catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					} 
             		
             		String tweet = "🔴 "+titular+"\n\n⬇ "+menciones+"\n"+url;
             		
             		try {  
             		  ConfigurationBuilder cb = new ConfigurationBuilder();
             		  cb.setDebugEnabled(true)
-            		  	.setOAuthConsumerKey("dL3ckuVSpgolw1sWIvbL4b301")
-            		  	.setOAuthConsumerSecret("IQi73s7DrgCeboIaUikOGK6IRADhNZURBLiXo0a06yrYfNk490")
-            		  	.setOAuthAccessToken("4091811677-X5ANICT0ecHDFXwjgIzzQMQt6umSQfePBMUSNU2")
-            		  	.setOAuthAccessTokenSecret("UyscrV8VKU0SdhqOGf7fVlTG5232B6N9bMNGClgDjgLg9");
+            		  	.setOAuthConsumerKey("XXXXXXXXXXXXXXXXXXXXXXXXX")
+            		  	.setOAuthConsumerSecret("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+            		  	.setOAuthAccessToken("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+            		  	.setOAuthAccessTokenSecret("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
             		  TwitterFactory tf = new TwitterFactory(cb.build());
             		  Twitter twitter = tf.getInstance();
-                  	  /*Twitter twitter = new TwitterFactory().getInstance();*/           
                   	  twitter.updateStatus(tweet);
                   	  JOptionPane.showMessageDialog(null,tweet,"Tweet publicado",JOptionPane.INFORMATION_MESSAGE,
     						new ImageIcon(getClass().getResource("MensajeOK.png")));
@@ -209,8 +185,7 @@ public class Ventana extends JFrame {
                   	  te.printStackTrace();
                   	  JOptionPane.showMessageDialog(null,"ERROR. No se ha podido publicar el tweet.",
         					"Tweet no publicado",JOptionPane.ERROR_MESSAGE,
-    						new ImageIcon(getClass().getResource("MensajeError.png")));
-                  	  //System.out.println("Error en la conexión: " + te.getMessage());         
+    						new ImageIcon(getClass().getResource("MensajeError.png")));      
                   	} catch (Exception e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
@@ -219,7 +194,6 @@ public class Ventana extends JFrame {
 	    						new ImageIcon(getClass().getResource("MensajeError.png")));
 					} 
             		
-            		//System.out.println(tweet);
             		            		
         		}
         		
@@ -240,32 +214,14 @@ public class Ventana extends JFrame {
         		} else {
         			
         			String menciones = generaMencionesIG(); 
-            		String titular = "";
+        			String titular = Funciones.cargaUltimaEntrada().getTitle();
             		String url = extraeURL.getText();
-            		
-            		try {
-            			
-    					titular = Funciones.traduceURL2(url);
-    					
-    				} catch (FileNotFoundException e1) {
-    					
-    					JOptionPane.showMessageDialog(null,"Por favor, revise el enlace de la entrada. Entrada no válida.",
-            					"URL no encontrada",JOptionPane.ERROR_MESSAGE,
-        						new ImageIcon(getClass().getResource("MensajeError.png")));
-    					e1.printStackTrace();
-    					
-    				} catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
             		
             		String tweet = "🔴 "+titular+"\n\n⬇ "+menciones+"\n"+url+"\n#cofradiaselviso #elvisodelalcor";
             		
             		StringSelection sS = new StringSelection(tweet);
             		Clipboard clip = Toolkit.getDefaultToolkit().getSystemClipboard();
             		clip.setContents(sS, null);
-            		
-            		//System.out.println(tweet);
             		
             		JOptionPane.showMessageDialog(null,tweet,"El texto para la publicación de Instagram se ha creado y copiado correctamente",
             				JOptionPane.INFORMATION_MESSAGE, new ImageIcon(getClass().getResource("MensajeOK.png")));
@@ -284,24 +240,8 @@ public class Ventana extends JFrame {
     						new ImageIcon(getClass().getResource("MensajeError.png")));
         		} else {
         			
-            		String titular = "";
+            		String titular = Funciones.cargaUltimaEntrada().getTitle();
             		String url = extraeURL.getText();
-            		
-            		try {
-            			
-    					titular = Funciones.traduceURL2(url);
-    					
-    				} catch (FileNotFoundException e1) {
-    					
-    					JOptionPane.showMessageDialog(null,"Por favor, revise el enlace de la entrada. Entrada no válida.",
-            					"URL no encontrada",JOptionPane.ERROR_MESSAGE,
-        						new ImageIcon(getClass().getResource("MensajeError.png")));
-    					e1.printStackTrace();
-    					
-    				} catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
             		            		
             		String tweet = "🔴 "+titular.toUpperCase()+"\n\n"+url;
             		
@@ -314,7 +254,6 @@ public class Ventana extends JFrame {
             		JOptionPane.showMessageDialog(null,tweet,"El texto para la publicación de Telegram se ha creado y copiado correctamente",
             				JOptionPane.INFORMATION_MESSAGE, new ImageIcon(getClass().getResource("MensajeOK.png")));
     				reiniciaProceso();
-            		            		
         		}
         		
         	}
@@ -329,25 +268,9 @@ public class Ventana extends JFrame {
         	
         });
 		
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//finaliza el programa cuando se da click en la X
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //finaliza el programa cuando se da click en la X
 
 	}
-	
-	/*private void extracted1() {
-		hdadPedido.setModel(new DefaultComboBoxModel<HermandadesTW>(HermandadesTW.values()));
-	}*/
-	
-	/*private void extracted2() {
-		DatosVersion datosprog = new DatosVersionImpl();
-		File directorio = new File(datosprog.getDirectorio());
-		Integer[] años = new Integer[directorio.list().length];
-		for(int i=0; i<directorio.list().length; i++){
-			años[i] = Integer.parseInt(directorio.list()[i]);
-		}
-		//añoPedido.setModel(new DefaultComboBoxModel<Año>(Año.values()));
-		añoPedido.setModel(new DefaultComboBoxModel<Integer>(años));
-	}*/
-
 	public static void main(String[] args) {
 		try{	  
 			JFrame.setDefaultLookAndFeelDecorated(true);
@@ -617,7 +540,7 @@ public class Ventana extends JFrame {
 			}
 		});
 		
-		extraeURL.setText("");
+		extraeURL.setText(Funciones.cargaUltimaEntrada().getLink());
 		meteOtros.setText("");
 	}
 	
@@ -639,14 +562,5 @@ public class Ventana extends JFrame {
 		}
 		return res;
 	}
-	
-	// TODO
-	// Métodos que simplifiquen el código, por ejemplo:
-	// Meter los JCheckBox en una lista, crear un algoritmo que recorra todos los elementos de la lista
-	// y vaya añadiendo si no están. POR EJEMPLO
-	// OTRA OPCIÓN: Un método auxiliar que compruebe que una mención no está ya incluida
-	
-	// SIGUIENTES PASOS:
-	// Automatizar la publicación en Telegram mediante un Bot
 	
 }

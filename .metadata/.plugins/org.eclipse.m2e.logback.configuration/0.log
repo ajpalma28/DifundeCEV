@@ -2220,3 +2220,42 @@
 2022-07-14 11:44:18,419 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-07-14 11:44:18,419 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\test\resources
 2022-07-14 11:44:26,998 [Worker-0: Launching Ventana] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/twitter4j-core: org.twitter4j:twitter4j-core:4.0.7 with classifier null to /twitter4j-core/target/classes
+2023-05-24 17:24:46,151 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-05-24 17:28:47,745 [Worker-8: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/twitter4j-core: org.twitter4j:twitter4j-core:4.0.7 with classifier  to /twitter4j-core/target/classes
+2023-05-24 17:29:06,721 [Worker-4: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ajptech:difundecev:0.0.1-SNAPSHOT @ E:\GitHub\DifundeCEV\difundecev\pom.xml.
+2023-05-24 17:29:06,737 [Worker-4: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/twitter4j-core: org.twitter4j:twitter4j-core:4.0.7 with classifier  to /twitter4j-core/target/classes
+2023-05-24 17:29:07,176 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:29:07,176 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\main\resources
+2023-05-24 17:29:07,178 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:29:07,178 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\test\resources
+2023-05-24 17:29:08,526 [Worker-3: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/twitter4j-core: org.twitter4j:twitter4j-core:4.0.7 with classifier  to /twitter4j-core/target/classes
+2023-05-24 17:29:08,532 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:29:08,532 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\main\resources
+2023-05-24 17:29:08,533 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:29:08,534 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\test\resources
+2023-05-24 17:29:09,890 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: C:\Users\Palma\Documents\Programar\DifundeCEV4\difundecev\lib\twitter4j-4.0.7\twitter4j-core\src\internal-async\java added.
+2023-05-24 17:29:09,890 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: C:\Users\Palma\Documents\Programar\DifundeCEV4\difundecev\lib\twitter4j-4.0.7\twitter4j-core\src\internal-http\java added.
+2023-05-24 17:29:09,890 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: C:\Users\Palma\Documents\Programar\DifundeCEV4\difundecev\lib\twitter4j-4.0.7\twitter4j-core\src\jmx\java added.
+2023-05-24 17:29:09,890 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: C:\Users\Palma\Documents\Programar\DifundeCEV4\difundecev\lib\twitter4j-4.0.7\twitter4j-core\src\internal-json\java added.
+2023-05-24 17:29:09,890 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: C:\Users\Palma\Documents\Programar\DifundeCEV4\difundecev\lib\twitter4j-4.0.7\twitter4j-core\src\internal-logging\java added.
+2023-05-24 17:29:09,890 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Source directory: C:\Users\Palma\Documents\Programar\DifundeCEV4\difundecev\lib\twitter4j-4.0.7\twitter4j-core\src\internal-util\java added.
+2023-05-24 17:29:09,949 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:29:09,953 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-05-24 17:29:09,959 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:29:09,960 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2023-05-24 17:29:28,274 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:29:28,275 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\main\resources
+2023-05-24 17:29:28,276 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:29:28,277 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\test\resources
+2023-05-24 17:29:30,734 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:29:30,735 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\main\resources
+2023-05-24 17:29:30,736 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:29:30,737 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\test\resources
+2023-05-24 17:30:31,248 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:30:31,248 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\main\resources
+2023-05-24 17:30:31,256 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:30:31,256 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\test\resources
+2023-05-24 17:31:15,135 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:31:15,135 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\main\resources
+2023-05-24 17:31:15,136 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-24 17:31:15,136 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\GitHub\DifundeCEV\difundecev\src\test\resources

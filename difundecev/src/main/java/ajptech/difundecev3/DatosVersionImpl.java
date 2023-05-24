@@ -9,10 +9,9 @@ import javax.swing.ImageIcon;
 public class DatosVersionImpl implements DatosVersion {
 	
 	private static final String NOMBRE = "DifundeCEV";
-	private static final String VERSION = "Versión v1.2.0.2";
-	private static final String FECHA = "Última actualización: 07/07/2022";
+	private static final String VERSION = "Versión v1.3.0.0";
+	private static final String FECHA = "Última actualización: 24/05/2023";
 	
-	//private static final String DIRECTORIO = "C:/Archivos de programa/AJPalma Estampitas/Data/";
 	private String v, f, dir1, n;
 	private Image icono;
 	
@@ -26,8 +25,6 @@ public class DatosVersionImpl implements DatosVersion {
 		dir1 = ejem+"/Data/";
 		icono = new ImageIcon(getClass().getResource("favCEV2.png")).getImage();
 
-		//dir = DIRECTORIO;
-		//i = icono;
 	}
 
 	public String getVersion() {

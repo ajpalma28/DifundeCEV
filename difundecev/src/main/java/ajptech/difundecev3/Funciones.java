@@ -8,9 +8,14 @@ import java.util.Scanner;
 import javax.swing.JCheckBox;
 import javax.swing.JTextField;
 
+import com.rometools.rome.feed.synd.SyndEntry;
+import com.rometools.rome.feed.synd.SyndFeed;
+import com.rometools.rome.io.SyndFeedInput;
+import com.rometools.rome.io.XmlReader;
+
 public class Funciones {
 	
-	// Obtiene el titular de la noticia a traves del enlace de la publicacion
+	// Obtiene el titular de la noticia a traves del enlace de la publicacion (MÉTODO ANTIGUO)
 	public static String traduceURL2(String url1) throws IOException {
 		
 		InputStream response = null;
@@ -52,6 +57,25 @@ public class Funciones {
 			res = true;
 		}
 		
+		return res;
+	}
+	
+	// Carga la última entrada publicada en la web, para sacar de ahí la información que necesitamos
+	public static SyndEntry cargaUltimaEntrada() {
+		SyndEntry res;
+		try {
+			URL feedUrl = new URL("https://cofradiaselviso.com/rss");
+			
+			// Crea un objeto SyndFeedInput para leer el feed
+	        SyndFeedInput input = new SyndFeedInput();
+	        
+	        // Lee el feed RSS desde la URL
+	        SyndFeed feed = input.build(new XmlReader(feedUrl));
+	        // Obtiene la entrada más reciente del feed
+	        res = feed.getEntries().get(0);
+		} catch (Exception e1) {
+			res = null;
+		}
 		return res;
 	}
 
